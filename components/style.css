@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/*font-family: 'Poppins', sans-serif;*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/*font-family: 'Open Sans', sans-serif;*/
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background-image: url(/images/bg-desktop.svg);
+  background-size: cover;
+  background-color: var(--violet);
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  min-width: 375px;
+}
+
+main {
+  padding: 5em 10em;
+}
+
+button {
+  padding: 0.8em 3.5em;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  color: var(--violet);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 3em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+i {
+  font-size: 2rem;
+  color: white;
+  margin: 0 0.2em;
+}
+
+i:hover {
+  color: var(--soft-magenta);
+}
+
+.mockups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  margin-top: 5em;
+  color: white;
+}
+
+.mockups-description h1 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.mockups-description p {
+  font-weight: 400;
+  margin-top: 2em;
+}
+.social-media {
+  margin-top: 5em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1536px) {
+  .mockups-description h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1280px) {
+  header img {
+    width: 23%;
+  }
+
+  .mockups-description h1 {
+    font-size: 2rem;
+  }
+  .mockups-description p {
+    font-size: 0.8rem;
+  }
+  button {
+    padding: 0.6em 3em;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding: 3rem;
+  }
+
+  .mockups {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mockups-img img {
+    width: 100%;
+  }
+
+  .mockups-description h1 {
+    font-size: 3rem;
+  }
+  .mockups-description p {
+    font-size: 1rem;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 640px) {
+  .mockups-description h1 {
+    font-size: 2.5rem;
+  }
+  .mockups-description p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 475px) {
+  header img {
+    width: 50%;
+  }
+  .mockups-description h1 {
+    font-size: 2rem;
+  }
+  .mockups-description p {
+    font-size: 0.6rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .mockups-description h1 {
+    font-size: 1.3rem;
+  }
+
+  br {
+    display: none;
+  }
+}
